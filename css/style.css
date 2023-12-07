@@ -1,11 +1,36 @@
 /*# Generics */
 
+a {
+    text-decoration: none;
+    color: #fff;
+}
 
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+}
 
 /** Utils */
 
+.evidenz1 {
+    border: 2px dashed black;
+}
+
+.evidenz2 {
+    border: 2px dashed red;
+    min-height: 80px;
+}
+
 /** header  */
 
+header {
+    background-color: #2C3E50;
+    height: 80px;
+}
 
 /** main */
 
