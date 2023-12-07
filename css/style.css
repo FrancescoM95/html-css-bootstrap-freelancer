@@ -1,3 +1,11 @@
+/*Todo Custom Properties */
+
+:root {
+    --primary-color: #2C3E50;
+}
+
+
+
 /*# Generics */
 
 a {
@@ -17,22 +25,59 @@ ul {
 /** Utils */
 
 .evidenz1 {
-    border: 2px dashed black;
+    border: 1px dashed black;
 }
 
 .evidenz2 {
-    border: 2px dashed red;
-    min-height: 80px;
+    border: 1px dashed red;
+}
+
+.card {
+    height: 200px;
+    border: 1px dashed blue;
+    background-color: #cecece;
+}
+
+div[class^=separator] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.separator-line {
+    display: inline-block;
+    width: 100px;
+    height: 5px;
+    border-radius: 5px;
+}
+
+.separator-light>.separator-line {
+    background-color: #fff;
+}
+
+.separator-dark {
+    color: var(--primary-color);
+}
+
+.separator-dark>.separator-line {
+    background-color: var(--primary-color);
 }
 
 /** header  */
 
 header {
-    background-color: #2C3E50;
+    background-color: var(--primary-color);
     height: 80px;
 }
 
 /** main */
 
+/*# JUMBOTRON */
+
+#jumbotron {
+    background-color: #1ABC9C;
+}
 
 /** footer */
