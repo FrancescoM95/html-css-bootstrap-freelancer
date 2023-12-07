@@ -2,6 +2,7 @@
 
 :root {
     --primary-color: #2C3E50;
+    --secondary-color: #1ABC9C;
 }
 
 
@@ -20,6 +21,16 @@ img {
 
 ul {
     list-style-type: none;
+}
+
+header,
+footer {
+    background-color: var(--primary-color);
+    height: 80px;
+}
+
+footer {
+    line-height: 80px;
 }
 
 /** Utils */
@@ -48,7 +59,7 @@ div[class^=separator] {
 
 .separator-line {
     display: inline-block;
-    width: 100px;
+    width: 50px;
     height: 5px;
     border-radius: 5px;
 }
@@ -67,17 +78,20 @@ div[class^=separator] {
 
 /** header  */
 
-header {
-    background-color: var(--primary-color);
-    height: 80px;
-}
-
 /** main */
 
-/*# JUMBOTRON */
+#jumbotron,
+#about {
+    background-color: var(--secondary-color);
+}
 
-#jumbotron {
-    background-color: #1ABC9C;
+#portfolio,
+#contact {
+    color: var(--primary-color);
+}
+
+#social {
+    background-color: #3A546D;
 }
 
 /** footer */
