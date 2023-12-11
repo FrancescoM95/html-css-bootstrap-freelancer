@@ -23,17 +23,16 @@ ul {
     list-style-type: none;
 }
 
-header,
-footer {
-    background-color: var(--primary-color);
-    height: 80px;
-}
-
-footer {
-    line-height: 80px;
-}
 
 /** Utils */
+
+.bgc-primary {
+    background-color: var(--primary-color);
+}
+
+.bgc-secondary {
+    background-color: var(--secondary-color);
+}
 
 .evidenz1 {
     border: 1px dashed black;
@@ -80,18 +79,25 @@ div[class^=separator] {
 
 /** main */
 
-#jumbotron,
-#about {
-    background-color: var(--secondary-color);
-}
-
 #portfolio,
-#contact {
+#contact,
+#contact .form-control::placeholder {
     color: var(--primary-color);
 }
 
-#social {
+#contact .form-control {
+    border-radius: 0;
+    padding-left: 0;
+    border-width: 0 0 1px 0;
+}
+
+
+/** footer */
+
+footer {
     background-color: #3A546D;
 }
 
-/** footer */
+.footer-bottom {
+    background-color: var(--primary-color);
+}
