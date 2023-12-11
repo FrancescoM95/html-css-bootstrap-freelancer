@@ -5,8 +5,6 @@
     --secondary-color: #1ABC9C;
 }
 
-
-
 /*# Generics */
 
 a {
@@ -34,6 +32,11 @@ h3 {
     font-weight: 500;
 }
 
+h4 {
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
 /** Utils */
 
 .bgc-primary {
@@ -42,16 +45,30 @@ h3 {
 
 .bgc-secondary {
     background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
 }
 
-.evidenz1 {
-    border: 1px dashed black;
+.btn-download:hover {
+    color: var(--secondary-color);
 }
 
-.evidenz2 {
-    border: 1px dashed red;
+.btn-social {
+    width: 50px;
+    height: 50px;
+    padding: 10px 15px;
+    border-color: #fff;
+    border-radius: 50%;
+    color: #fff;
 }
 
+mark {
+    background-color: transparent;
+    color: var(--secondary-color);
+    font-weight: 500;
+    padding: 0;
+}
+
+/* SEPARATOR */
 div[class^=separator] {
     display: flex;
     justify-content: center;
@@ -100,12 +117,10 @@ header .navbar a {
     font-weight: 500;
 }
 
-
 /*# PORTFOLIO */
 
 .portfolio-img>img {
     border-radius: 10px;
-    margin-bottom: 30px;
 }
 
 #portfolio,
@@ -120,7 +135,6 @@ header .navbar a {
     border-width: 0 0 1px 0;
 }
 
-
 /** footer */
 
 footer {
@@ -129,4 +143,23 @@ footer {
 
 .footer-bottom {
     background-color: var(--primary-color);
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/*@ RESPONSIVE */
+
+@media screen and (min-width:768px) {
+
+    .separator-line {
+        width: 100px;
+    }
+}
+
+
+@media screen and (min-width:992px) {
+
+    .separator-line {
+        width: 120px;
+    }
 }
