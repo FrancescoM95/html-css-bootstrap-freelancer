@@ -77,6 +77,11 @@ div[class^=separator] {
     margin: 15px 0;
 }
 
+.separator-icon {
+    position: relative;
+    top: 2px;
+}
+
 .separator-line {
     display: inline-block;
     width: 80px;
